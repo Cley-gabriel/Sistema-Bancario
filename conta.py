@@ -23,7 +23,7 @@ class Conta(ABC):
     
 #Conta corrente com limite de saque.
 class ContaCorrente(Conta):
-    def __init__(self, agencia, conta, saldo, limite = 100):
+    def __init__(self, agencia, conta, saldo, limite = 1500):
         super().__init__(agencia, conta, saldo)
         self.limite = limite
     
